@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Email</title>
+    <script>
+        function emailVallid(email) {
+            let emailChack = null;
+            if (email.indexOf("@") == -1) {
+                emailChack = false;
+            }
+            if (email.indexOf(".") == -1) {
+                emailChack = false;
+            }
+            if (emailChack == false) {
+                alert("email is not valid.");
+            } else {
+                alert("email is valid.");
+            }
+        }
+        emailVallid(prompt("Enter email Address:", ""));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
